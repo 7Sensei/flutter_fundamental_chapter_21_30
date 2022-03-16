@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((_) {
     runApp(MyApp());
@@ -50,7 +51,7 @@ class HomePage extends StatelessWidget {
               top: -getBigDiameter(context) / 4,
               child: Container(
                 child: Center(
-                  child: Text('Dribble',
+                  child: Text('me and my pearl',
                       style: GoogleFonts.pacifico(
                         color: Colors.white,
                         fontSize: 30,
